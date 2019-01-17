@@ -3,10 +3,9 @@ $(document).ready(function() {
     var nameInput = $("#name").val();
     var areaInput = $("#area").val();
     var swimInput = $("#swim").val();
-    //var currentClass;
+
     $(".start-hidden").hide();
-// if (nameInput === "") {
-// alert("Please enter your name.")
+
     if (areaInput === "Inside"){
       $("#catResult").show();
       currentClass = "#catResult";
@@ -23,8 +22,6 @@ $(document).ready(function() {
     }//$("formOne").removeClass(currentClass);
      $("formOne").addClass(".result");
 
-
-     // $("starthidden").empty().text();
   });
 
 });
