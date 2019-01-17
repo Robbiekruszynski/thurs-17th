@@ -1,3 +1,37 @@
 .button{
   text-align: center;
+
+}
+
+.jumbotron{
+  text-align: center;
+  color: hotpink;
+  background-image: url('../img/jungle.jpg');
+  border-radius: 20px;
+  image-orientation: center;
+
+}
+/*
+#result {
+  display: none;
+} */
+
+#frog{
+  display: none;
+}
+
+#catResult{
+  display: none;
+}
+
+#dog{
+  display: none;
+}
+
+.start-hidden {
+  display: none;
+}
+
+.result {
+  display: inline;
 }

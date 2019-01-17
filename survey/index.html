@@ -10,6 +10,11 @@
   </head>
   <body>
     <div class = "container">
+      <div class="jumbotron">
+        <h1 class="display-4">What is your spirit animal?</h1>
+        <p class="lead">Enter the information below and find out what your spirit animal is!</p>
+      </div>
+
       <div class ="row">
         <form id="formOne">
           <div class="panel">
@@ -18,26 +23,38 @@
               <input type="text" class="name" id="name">
             </div>
           <div class="form-group">
-            <label for="focus">Do you like being inside or outside?</label>
-            <select class="form-group" id="power">
-              <option></option>
+            <label for="area">Do you like being inside or outside?</label>
+            <select class="form-group" id="area">
               <option>Inside</option>
               <option>Outside</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="focus">Do you like swimming?</label>
-            <select class="form-group" id="planet">
-              <option></option>
+            <label for="swim">Do you like swimming?</label>
+            <select class="form-group" id="swim">
               <option>Yes</option>
+              <option>Sometimes</option>
               <option>No</option>
             </select>
           </div>
         </div>
       </div>
-      <div class="row button">
-        <button type="button" class="btn btn-primary btn-lg">Submit!</button>
-    </div>
+      <div id="btn-holder" class="row button">
+        <button type="button" class="btn btn-primary btn-lg" id="submit">Submit!</button>
+
+        <div class="start-hidden dump" id="catResult">
+          <p>Congrats!, You are a stupid cat</p>
+        </div>
+
+        <div class="start-hidden dump" id="frogResult">
+          <p>Congrats!, You are a stupid frog</p>
+        </div>
+
+        <div class="start-hidden dump" id="dogResult">
+          <p>Congrats!, You are a stupid dog</p>
+        </div>
+
+  </div>
 
   </body>
 </html>
