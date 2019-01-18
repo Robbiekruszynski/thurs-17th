@@ -15,13 +15,13 @@
         <h3 class="lead"><b>Enter the information below and find out what your spirit animal is!</b></h3>
       </div>
 
-      <div class ="row">
         <form id="formOne">
           <div class="panel">
             <div class="form-group">
               <label for="name">Let's start off with your name:</label>
               <input type="text" class="name" id="name">
             </div>
+
           <div class="form-group">
             <label for="area">Do you like being inside or outside?</label>
             <select class="form-group" id="area">
@@ -29,6 +29,7 @@
               <option>Outside</option>
             </select>
           </div>
+
           <div class="form-group">
             <label for="swim">Do you like swimming?</label>
             <select class="form-group" id="swim">
@@ -38,30 +39,37 @@
             </select>
           </div>
         </div>
-      </div>
+
+        <div class="form-group">
+          <label for="fly">Do you like the idea of flying?</label>
+          <select class="form-group" id="fly">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+
+
       <div id="btn-holder" class="row button">
         <button type="button" class="btn btn-primary btn-lg" id="submit">Submit!</button>
+      </div>
+      <div class="start-hidden" id="catResult">
+        <p><span class="name"></span>, You are a beautiful cat</p>
+        <img src="img/cat2.gif">
+      </div>
 
-        <div class="start-hidden" id="catResult">
-          <p>Congrats!, You are a beautiful cat</p>
-          <img src="img/cat2.gif">
-        </div>
+      <div class="start-hidden" id="frogResult">
+        <p><span class="name"></span>, You are a beautiful frog</p>
+        <img src="img/frog.gif">
+      </div>
 
-        <div class="start-hidden" id="frogResult">
-          <p>Congrats!, You are a beautiful frog</p>
-          <img src="img/frog.gif">
-        </div>
-
-        <div class="start-hidden" id="dogResult">
-          <p>Congrats!, You are a beautiful dog</p>
-          <img src="img/dog.gif">
-        </div>
-
-  </div>
-
-  </body>
-</html>
-
-
+      <div class="start-hidden" id="dogResult">
+        <p><span class="name"></span>, You are a beautiful dog</p>
+        <img src="img/dog.gif">
+      </div>
+      <div class="start-hidden" id="birdResult">
+        <p><span class="name"></span>, You are a beautiful bird</p>
+        <img src="img/bird.gif">
+      </div>
+    </div>
   </body>
 </html>
