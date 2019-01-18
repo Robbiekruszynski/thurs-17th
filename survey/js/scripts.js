@@ -19,9 +19,7 @@ $(document).ready(function() {
     }
     else if(areaInput=== "Outside" && (swimInput) ==="No"){
       $("#catResult").show();
-    }//$("formOne").removeClass(currentClass);
-     $("formOne").addClass(".result");
-
+    }
   });
 
 });

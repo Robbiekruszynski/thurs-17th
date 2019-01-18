@@ -6,27 +6,15 @@
 .jumbotron{
   text-align: center;
   color: hotpink;
-  background-image: url('../img/jungle.jpg');
+  background-image: url('../img/back.gif');
   border-radius: 20px;
   image-orientation: center;
 
 }
-/*
-#result {
-  display: none;
-} */
 
 #jumbotron{
   background-image: url("../img/frog.gif");
   background: cover;
-  display: none;
-}
-
-#catResult{
-  display: none;
-}
-
-#dogResult{
   display: none;
 }
 
