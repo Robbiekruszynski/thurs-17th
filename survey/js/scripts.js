@@ -10,29 +10,50 @@ $(document).ready(function() {
 
     $(".start-hidden").hide();
 
-    if (areaInput === "Inside" && flyInput === "No"){
+    if (nameInput === "") {
+      alert("Please enter your name.")
+
+    }else if (areaInput === "" && swimInput === "" && flyInput === "") {
+      alert("Please fill complete the survey")
+
+    } else if (areaInput === "Inside" && flyInput === "No") {
       $("#catResult").show();
       currentClass = "#catResult";
+      $(".user-result").show();
+      $("#catResult").show();
+      $("#catResult").siblings().hide();
 
     } else if(areaInput === "Outside" && swimInput === "Yes" &&flyInput === "No"){
       $("#frogResult").show();
       currentClass = "#frogResult";
+      $("#frogResult").siblings().hide();
+
 
     } else if(areaInput === "Outside" && flyInput === "Yes"){
       $("#birdResult").show();
       currentClass= "#birdResult";
+      $("#birdResult").siblings().hide();
+
 
     } else if(areaInput === "Outside" && swimInput === "Sometimes" && flyInput === "No"){
       $("#dogResult").show();
       currentClass="#dogResult";
+      $("#dogResult").siblings().hide();
+
 
     } else if(areaInput === "Outside" && swimInput === "No" && flyInput === "No"){
       $("#catResult").show();
-
+      currentClass = "#catResult";
+      $("#catResult").siblings().hide();
+      
     } else {
       $("#catResult").show();
       currentClass = "#catResult";
+      $("#catResult").siblings().hide();
+
     }
+    event.preventDefault();
+
   });
 
 });
